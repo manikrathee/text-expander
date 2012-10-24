@@ -1,0 +1,200 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>groupInfo</key>
+	<dict>
+		<key>expandAfterMode</key>
+		<integer>2</integer>
+		<key>groupName</key>
+		<string>Tools</string>
+	</dict>
+	<key>snippetsTE2</key>
+	<array>
+		<dict>
+			<key>abbreviation</key>
+			<string>,,href</string>
+			<key>abbreviationMode</key>
+			<integer>0</integer>
+			<key>creationDate</key>
+			<date>2009-10-28T10:50:26Z</date>
+			<key>flags</key>
+			<integer>2</integer>
+			<key>label</key>
+			<string>Clipboard HTML Link</string>
+			<key>lastUsed</key>
+			<date>2012-06-29T19:30:18Z</date>
+			<key>modificationDate</key>
+			<date>2010-05-05T20:04:04Z</date>
+			<key>plainText</key>
+			<string>#!/usr/bin/env ruby -wKU
+
+def entity_escape(text)
+  text.gsub(/&amp;(?!([a-zA-Z0-9]+|#[0-9]+|#x[0-9a-fA-F]+);)/, '&amp;amp;')
+end
+
+def make_link(text)
+  case text
+  when %r{\A(mailto:)?(.*?@.*\..*)\z}:
+    "mailto:#{$2.gsub(/./) {sprintf("&amp;#x%02X;", $&amp;.unpack("U")[0])}}"
+  when %r{\Ahttps?://.*?\.\w{2,4}.*?\z}:
+    entity_escape(text)
+  when %r{\A(www\..*|.*\.\w{2,4})\z}:
+    "http://#{entity_escape text}"
+  when %r{\A.*?\.\w{2,4}\/?.*\z}:
+    "http://#{entity_escape text}"
+  else
+    nil
+  end
+end
+
+url = make_link %x{__CF_USER_TEXT_ENCODING=$UID:0x8000100:0x8000100 pbpaste}.strip
+print %Q{&lt;a href="#{url}"&gt;%fill:Link Text%&lt;/a&gt;}</string>
+			<key>snippetType</key>
+			<integer>3</integer>
+			<key>useCount</key>
+			<integer>30</integer>
+			<key>uuidString</key>
+			<string>B2CA5CF2-5F5E-4989-94C1-7D25C7B83130</string>
+		</dict>
+		<dict>
+			<key>abbreviation</key>
+			<string>*cld</string>
+			<key>abbreviationMode</key>
+			<integer>0</integer>
+			<key>creationDate</key>
+			<date>2012-08-07T05:54:59Z</date>
+			<key>flags</key>
+			<integer>2</integer>
+			<key>label</key>
+			<string>CloudApp Direct Link</string>
+			<key>lastUsed</key>
+			<date>2012-10-24T17:27:34Z</date>
+			<key>modificationDate</key>
+			<date>2012-08-09T16:16:51Z</date>
+			<key>plainText</key>
+			<string>#!/usr/bin/ruby
+require 'open-uri'
+require 'cgi'
+
+def entity_escape(text)
+  text.gsub(/&amp;(?!([a-zA-Z0-9]+|#[0-9]+|#x[0-9a-fA-F]+);)/, '&amp;amp;')
+end
+
+def make_link(text)
+  case text
+  when %r{\Ahttps?://.*?\.\w{2,4}.*?\z}:
+    entity_escape(text)
+  when %r{\A(www\..*|.*\.\w{2,4})\z}:
+    "http://#{entity_escape text}"
+  when %r{\A.*?\.\w{2,4}\/?.*\z}:
+    "http://#{entity_escape text}"
+  else
+    nil
+  end
+end
+
+input = make_link %x{__CF_USER_TEXT_ENCODING=$UID:0x8000100:0x8000100 pbpaste}.strip
+
+open(input,"Accept" =&gt; "application/json") {|f|
+	res = f.read.match(/"remote_url":"(.*?)"/)[1]
+	print res unless res.nil?
+}
+</string>
+			<key>snippetType</key>
+			<integer>3</integer>
+			<key>useCount</key>
+			<integer>48</integer>
+			<key>uuidString</key>
+			<string>AD41323A-1227-401A-A95C-9455F13760E1</string>
+		</dict>
+		<dict>
+			<key>abbreviation</key>
+			<string>,,encemail</string>
+			<key>abbreviationMode</key>
+			<integer>0</integer>
+			<key>creationDate</key>
+			<date>2010-05-08T00:57:58Z</date>
+			<key>flags</key>
+			<integer>2</integer>
+			<key>label</key>
+			<string>Encode email address</string>
+			<key>lastUsed</key>
+			<date>2012-08-09T12:00:18Z</date>
+			<key>modificationDate</key>
+			<date>2012-04-21T13:33:33Z</date>
+			<key>plainText</key>
+			<string>#!/usr/bin/env ruby -wKU
+
+clipboard = %x{__CF_USER_TEXT_ENCODING=$UID:0x8000100:0x8000100 pbpaste}.strip
+print "mailto:#{$2.gsub(/./) {sprintf("&amp;#x%02X;", $&amp;.unpack("U")[0])}}" if clipboard =~ /\A(mailto:)?(.*?@.*\..*)\z/</string>
+			<key>snippetType</key>
+			<integer>3</integer>
+			<key>useCount</key>
+			<integer>4</integer>
+			<key>uuidString</key>
+			<string>A045567D-3BA9-4E3C-8824-45FBFE6DF478</string>
+		</dict>
+		<dict>
+			<key>abbreviation</key>
+			<string>*bitly</string>
+			<key>abbreviationMode</key>
+			<integer>0</integer>
+			<key>creationDate</key>
+			<date>2012-08-09T11:54:19Z</date>
+			<key>flags</key>
+			<integer>2</integer>
+			<key>label</key>
+			<string>Expand URL (bit.ly)</string>
+			<key>lastUsed</key>
+			<date>2012-08-09T11:58:29Z</date>
+			<key>modificationDate</key>
+			<date>2012-08-09T16:16:56Z</date>
+			<key>plainText</key>
+			<string>#!/usr/bin/ruby
+# Bit.ly shortener TextExpander Snippet by Brett Terpstra
+# Working as of June, 2012 but APIs are a'changin
+# Create snippets for username (shortcut: #btlyu) and API key (shortcut: #btlya)
+# Find your API key at http://bit.ly/a/your_api_key
+
+require 'open-uri'
+require 'cgi'
+
+def entity_escape(text)
+  text.gsub(/&amp;(?!([a-zA-Z0-9]+|#[0-9]+|#x[0-9a-fA-F]+);)/, '&amp;amp;')
+end
+
+def make_link(text)
+  case text
+  when %r{\Ahttps?://.*?\.\w{2,4}.*?\z}:
+    entity_escape(text)
+  when %r{\A(www\..*|.*\.\w{2,4})\z}:
+    "http://#{entity_escape text}"
+  when %r{\A.*?\.\w{2,4}\/?.*\z}:
+    "http://#{entity_escape text}"
+  else
+    nil
+  end
+end
+
+USER_NAME = '%snippet:#btlyu%' # Your login name
+API_KEY = '%snippet:#btlya%'
+url = make_link %x{__CF_USER_TEXT_ENCODING=$UID:0x8000100:0x8000100 pbpaste}.strip
+
+res = open("http://api.bit.ly/v3/expand?login=#{USER_NAME}&amp;apiKey=#{API_KEY}&amp;shortUrl=#{CGI.escape(url)}&amp;format=txt").read unless url.nil?
+
+begin
+  print res unless res.nil?
+rescue
+  exit
+end</string>
+			<key>snippetType</key>
+			<integer>3</integer>
+			<key>useCount</key>
+			<integer>0</integer>
+			<key>uuidString</key>
+			<string>51B3630F-5051-48C6-A6E3-DD2366188E2C</string>
+		</dict>
+	</array>
+</dict>
+</plist>

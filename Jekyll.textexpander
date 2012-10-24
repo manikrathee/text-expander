@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>groupInfo</key>
+	<dict>
+		<key>expandAfterMode</key>
+		<integer>0</integer>
+		<key>groupName</key>
+		<string>Jekyll</string>
+	</dict>
+	<key>snippetsTE2</key>
+	<array>
+		<dict>
+			<key>abbreviation</key>
+			<string>*jekyll_comment</string>
+			<key>abbreviationMode</key>
+			<integer>0</integer>
+			<key>creationDate</key>
+			<date>2012-01-17T20:40:48Z</date>
+			<key>flags</key>
+			<integer>0</integer>
+			<key>label</key>
+			<string>Jekyll - Comment</string>
+			<key>lastUsed</key>
+			<date>2012-01-17T20:42:02Z</date>
+			<key>modificationDate</key>
+			<date>2012-01-17T20:41:57Z</date>
+			<key>plainText</key>
+			<string>{%!-- %| --!%}</string>
+			<key>snippetType</key>
+			<integer>0</integer>
+			<key>useCount</key>
+			<integer>0</integer>
+			<key>uuidString</key>
+			<string>F1EA533D-7218-490D-A27A-0BA332494C38</string>
+		</dict>
+		<dict>
+			<key>abbreviation</key>
+			<string>*jekyll_frontmatter</string>
+			<key>abbreviationMode</key>
+			<integer>0</integer>
+			<key>creationDate</key>
+			<date>2012-01-17T20:33:05Z</date>
+			<key>flags</key>
+			<integer>0</integer>
+			<key>label</key>
+			<string>jekyll - yaml front matter</string>
+			<key>lastUsed</key>
+			<date>2012-01-17T23:41:43Z</date>
+			<key>modificationDate</key>
+			<date>2012-01-17T20:56:12Z</date>
+			<key>plainText</key>
+			<string>---
+layout: post
+title: lorem
+date: yyyy-mm-dd hh:mm:ss
+permalink: 
+published: true
+expires: never
+categories:
+    - one
+    - two
+tags:
+	- tag
+	- tagg
+---</string>
+			<key>snippetType</key>
+			<integer>0</integer>
+			<key>useCount</key>
+			<integer>0</integer>
+			<key>uuidString</key>
+			<string>EB501BCE-543D-4EB2-9AC8-D994A38C2AC4</string>
+		</dict>
+	</array>
+</dict>
+</plist>

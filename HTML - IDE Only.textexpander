@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>groupInfo</key>
+	<dict>
+		<key>expandAfterMode</key>
+		<integer>0</integer>
+		<key>groupName</key>
+		<string>HTML - IDE Only</string>
+	</dict>
+	<key>snippetsTE2</key>
+	<array>
+		<dict>
+			<key>abbreviation</key>
+			<string>*ahref</string>
+			<key>abbreviationMode</key>
+			<integer>0</integer>
+			<key>creationDate</key>
+			<date>2012-08-22T16:12:14Z</date>
+			<key>flags</key>
+			<integer>0</integer>
+			<key>label</key>
+			<string>Anchor + Clipboard</string>
+			<key>lastUsed</key>
+			<date>2012-09-28T20:17:52Z</date>
+			<key>modificationDate</key>
+			<date>2012-09-15T17:33:24Z</date>
+			<key>plainText</key>
+			<string>&lt;a href="%clipboard" title="%fill:title%"&gt;%fill:title%&lt;/a&gt;
+</string>
+			<key>snippetType</key>
+			<integer>0</integer>
+			<key>useCount</key>
+			<integer>12</integer>
+			<key>uuidString</key>
+			<string>E4DC99F0-8F5F-499A-A09F-AD510D069BCE</string>
+		</dict>
+		<dict>
+			<key>abbreviation</key>
+			<string>&lt;div c</string>
+			<key>abbreviationMode</key>
+			<integer>0</integer>
+			<key>creationDate</key>
+			<date>2012-08-20T02:39:35Z</date>
+			<key>flags</key>
+			<integer>0</integer>
+			<key>label</key>
+			<string>Div Class</string>
+			<key>lastUsed</key>
+			<date>2012-10-14T02:49:14Z</date>
+			<key>modificationDate</key>
+			<date>2012-08-20T02:40:14Z</date>
+			<key>plainText</key>
+			<string>&lt;div class="%filltext:name=class%"&gt;
+%|
+&lt;/div&gt; &lt;!-- /%filltext:name=class% --&gt;</string>
+			<key>snippetType</key>
+			<integer>0</integer>
+			<key>useCount</key>
+			<integer>6</integer>
+			<key>uuidString</key>
+			<string>140C4426-9194-4944-96FE-D1773870CAC1</string>
+		</dict>
+		<dict>
+			<key>abbreviation</key>
+			<string>&lt;div i</string>
+			<key>abbreviationMode</key>
+			<integer>0</integer>
+			<key>creationDate</key>
+			<date>2012-08-20T02:38:39Z</date>
+			<key>flags</key>
+			<integer>0</integer>
+			<key>label</key>
+			<string>div id</string>
+			<key>lastUsed</key>
+			<date>2012-10-14T03:06:48Z</date>
+			<key>modificationDate</key>
+			<date>2012-08-20T02:39:44Z</date>
+			<key>plainText</key>
+			<string>&lt;div id="%filltext:name=id%"&gt;
+%|
+&lt;/div&gt; &lt;!-- /%filltext:name=id% --&gt;</string>
+			<key>snippetType</key>
+			<integer>0</integer>
+			<key>useCount</key>
+			<integer>3</integer>
+			<key>uuidString</key>
+			<string>E842DCCD-8679-4D8B-9B38-A0FD16CFC212</string>
+		</dict>
+	</array>
+</dict>
+</plist>

@@ -1,0 +1,330 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>groupInfo</key>
+	<dict>
+		<key>expandAfterMode</key>
+		<integer>0</integer>
+		<key>groupName</key>
+		<string>Responsive / Adaptive Design</string>
+	</dict>
+	<key>snippetsTE2</key>
+	<array>
+		<dict>
+			<key>abbreviation</key>
+			<string>//animresponsive</string>
+			<key>abbreviationMode</key>
+			<integer>0</integer>
+			<key>creationDate</key>
+			<date>2012-02-07T18:09:37Z</date>
+			<key>flags</key>
+			<integer>0</integer>
+			<key>label</key>
+			<string>Animated Responsive Layout</string>
+			<key>modificationDate</key>
+			<date>2012-02-07T18:09:37Z</date>
+			<key>plainText</key>
+			<string>&lt;!doctype html&gt;
+&lt;title&gt;Animated responsive layout&lt;/title&gt;
+&lt;link href=stylesheet.css rel=stylesheet&gt;
+&lt;p&gt;
+  Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+  tempor incididunt ut labore et dolore magna aliqua. Cras laoreet, mauris in
+  auctor ullamcorper, est est rutrum justo, ac tempus augue tortor ac massa.
+  Praesent magna justo, volutpat sit amet facilisis non, hendrerit aliquam
+  risus. Sed ultricies nibh quis quam iaculis pretium. Pellentesque pulvinar
+  mollis magna a vestibulum. Integer augue dolor, mollis in sodales feugiat,
+  consequat ut lacus. Morbi velit neque, tristique vitae mattis malesuada.
+&lt;p&gt;
+  Vestibulum ut urna massa, a venenatis purus. Cras sed blandit quam. Morbi eu
+  turpis ut purus ornare tempus et sit amet lorem. Ut enim ad minim veniam, quis
+  nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+  Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore
+  eu fugiat nulla pariatur. Integer ultrices bibendum arcu, non pretium diam
+  condimentum ac nullam imperdiet.
+&lt;p&gt;
+  Cras ut cursus nulla. Aenean fermentum scelerisque malesuada. Phasellus ut
+  nisl mauris, eget hendrerit odio. Pellentesque habitant morbi tristique
+  senectus et netus et malesuada fames ac turpis egestas. Nullam velit nisl,
+  sodales eu ullamcorper id, fermentum ac lectus. Curabitur erat metus, sodales
+  cursus viverra vel, ornare quis ipsum dolore magna aliqua. Mauris enim mi,
+  tempus vel hendrerit id, eleifend a nulla. Praesent eget ante felis, quis
+  consectetur velit.
+
+
+
+
+body {
+  font:.75em/1.5 "lucida grande", arial, sans-serif;
+  overflow:hidden }
+p {
+  position:absolute;
+  top:50%;
+  left:50%;
+  width:200px;
+  margin-top:-200px;
+  -webkit-transition:all 700ms cubic-bezier(.4,.1,.4,1) 200ms;
+  -moz-transition:all 700ms cubic-bezier(.4,.1,.4,1) 200ms;
+  -o-transition:all 700ms cubic-bezier(.4,.1,.4,1) 200ms;
+  transition:all 700ms cubic-bezier(.4,.1,.4,1) 200ms }
+
+p:first-child     { margin-left:-340px }
+p:nth-child(even) { margin-left:-100px }
+p:last-child      { margin-left:140px  }
+
+@media only screen and (max-width:760px) {
+  p {
+    width:300px;
+    margin-left:-150px!important }
+  p:first-child     { margin-top:-315px }
+  p:nth-child(even) { margin-top:-90px  }
+  p:last-child      { margin-top:100px  } }
+</string>
+			<key>snippetType</key>
+			<integer>0</integer>
+			<key>useCount</key>
+			<integer>0</integer>
+			<key>uuidString</key>
+			<string>77EBDF0B-93A4-4625-99A1-6616B139F493</string>
+		</dict>
+		<dict>
+			<key>abbreviation</key>
+			<string>_hidenavbar</string>
+			<key>abbreviationMode</key>
+			<integer>0</integer>
+			<key>creationDate</key>
+			<date>2011-12-23T04:08:41Z</date>
+			<key>flags</key>
+			<integer>0</integer>
+			<key>label</key>
+			<string>Hide Mobile Nav Bar</string>
+			<key>lastUsed</key>
+			<date>2012-01-30T21:15:34Z</date>
+			<key>modificationDate</key>
+			<date>2011-12-23T04:08:57Z</date>
+			<key>plainText</key>
+			<string>&lt;script&gt;
+   	window.addEventListener("load",function() {
+   	  setTimeout(function(){
+   	    window.scrollTo(0, 1);
+   	  }, 0);
+   	});
+  &lt;/script&gt;</string>
+			<key>snippetType</key>
+			<integer>0</integer>
+			<key>useCount</key>
+			<integer>1</integer>
+			<key>uuidString</key>
+			<string>4C7D9205-CA19-4E54-A211-9DA8E9842902</string>
+		</dict>
+		<dict>
+			<key>abbreviation</key>
+			<string>_querydebug</string>
+			<key>abbreviationMode</key>
+			<integer>0</integer>
+			<key>creationDate</key>
+			<date>2011-12-21T18:40:00Z</date>
+			<key>flags</key>
+			<integer>0</integer>
+			<key>label</key>
+			<string>Media Query Debug Mode</string>
+			<key>lastUsed</key>
+			<date>2012-01-30T21:15:42Z</date>
+			<key>modificationDate</key>
+			<date>2012-04-09T16:14:43Z</date>
+			<key>plainText</key>
+			<string>body::before{
+        content: "Tablet media query (768 &lt; 979) fired";
+        font-weight: bold;
+        display: block;
+        text-align: center;
+        background: rgba(255,255,0, 0.9);
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        z-index: 9999;
+    }
+</string>
+			<key>snippetType</key>
+			<integer>0</integer>
+			<key>useCount</key>
+			<integer>1</integer>
+			<key>uuidString</key>
+			<string>3E966E9F-B06E-4957-9A03-FAC1CD238FD3</string>
+		</dict>
+		<dict>
+			<key>abbreviation</key>
+			<string>_queryset</string>
+			<key>abbreviationMode</key>
+			<integer>0</integer>
+			<key>creationDate</key>
+			<date>2011-12-12T15:04:33Z</date>
+			<key>flags</key>
+			<integer>0</integer>
+			<key>label</key>
+			<string>Media Query Set</string>
+			<key>lastUsed</key>
+			<date>2012-04-03T16:50:24Z</date>
+			<key>modificationDate</key>
+			<date>2012-04-09T16:15:47Z</date>
+			<key>plainText</key>
+			<string>@media screen and (min-width: 768px) {}
+
+@media screen and (max-width: 1200px) {}
+
+@media screen and (max-width: 1024px) {}
+
+@media screen and (max-device-width: 1024px) and (orientation: landscape) {}
+
+@media screen and (max-width: 768px) {}
+
+@media screen and (max-device-width: 1024px) and (orientation: portrait) {}
+
+@media handheld and (max-width: 480px),
+       screen and (max-device-width: 480px),
+       screen and (max-width: 600px) {}
+</string>
+			<key>snippetType</key>
+			<integer>0</integer>
+			<key>useCount</key>
+			<integer>17</integer>
+			<key>uuidString</key>
+			<string>300777CC-C074-4DA0-8ECE-712D879ACAA1</string>
+		</dict>
+		<dict>
+			<key>abbreviation</key>
+			<string>_querylandscape</string>
+			<key>abbreviationMode</key>
+			<integer>0</integer>
+			<key>creationDate</key>
+			<date>2011-12-12T15:06:30Z</date>
+			<key>flags</key>
+			<integer>0</integer>
+			<key>label</key>
+			<string>Query - iPad landscape</string>
+			<key>lastUsed</key>
+			<date>2012-02-03T02:48:50Z</date>
+			<key>modificationDate</key>
+			<date>2012-04-09T16:14:55Z</date>
+			<key>plainText</key>
+			<string>@media (max-device-width: 1024px) and (orientation: landscape) { }
+</string>
+			<key>snippetType</key>
+			<integer>0</integer>
+			<key>useCount</key>
+			<integer>1</integer>
+			<key>uuidString</key>
+			<string>38B8FFFA-1BB6-4FEE-AAA2-353DA4F44E50</string>
+		</dict>
+		<dict>
+			<key>abbreviation</key>
+			<string>_queryportrait</string>
+			<key>abbreviationMode</key>
+			<integer>0</integer>
+			<key>creationDate</key>
+			<date>2011-12-12T15:06:57Z</date>
+			<key>flags</key>
+			<integer>0</integer>
+			<key>label</key>
+			<string>Query - iPad Portrait</string>
+			<key>lastUsed</key>
+			<date>2012-05-01T06:03:54Z</date>
+			<key>modificationDate</key>
+			<date>2012-04-09T16:14:59Z</date>
+			<key>plainText</key>
+			<string>@media (max-device-width: 1024px) and (orientation: portrait) { }</string>
+			<key>snippetType</key>
+			<integer>0</integer>
+			<key>useCount</key>
+			<integer>4</integer>
+			<key>uuidString</key>
+			<string>AEC63E3C-F3F8-4768-945E-2538882046FE</string>
+		</dict>
+		<dict>
+			<key>abbreviation</key>
+			<string>_queryiphone</string>
+			<key>abbreviationMode</key>
+			<integer>0</integer>
+			<key>creationDate</key>
+			<date>2011-12-12T15:08:31Z</date>
+			<key>flags</key>
+			<integer>0</integer>
+			<key>label</key>
+			<string>Query - iPhone</string>
+			<key>lastUsed</key>
+			<date>2012-05-01T05:59:21Z</date>
+			<key>modificationDate</key>
+			<date>2011-12-12T15:08:31Z</date>
+			<key>plainText</key>
+			<string>@media handheld and (max-width: 480px),
+       screen and (max-device-width: 480px),
+       screen and (max-width: 600px) { 
+
+}
+
+</string>
+			<key>snippetType</key>
+			<integer>0</integer>
+			<key>useCount</key>
+			<integer>3</integer>
+			<key>uuidString</key>
+			<string>904F9461-9D29-4CD9-8000-CB8AEA4EC96D</string>
+		</dict>
+		<dict>
+			<key>abbreviation</key>
+			<string>@media</string>
+			<key>abbreviationMode</key>
+			<integer>0</integer>
+			<key>creationDate</key>
+			<date>2012-04-09T16:11:06Z</date>
+			<key>flags</key>
+			<integer>0</integer>
+			<key>label</key>
+			<string>Query - Single</string>
+			<key>lastUsed</key>
+			<date>2012-10-24T01:42:13Z</date>
+			<key>modificationDate</key>
+			<date>2012-08-31T17:27:00Z</date>
+			<key>plainText</key>
+			<string>@media screen and (min-width: %|px) {
+
+}</string>
+			<key>snippetType</key>
+			<integer>0</integer>
+			<key>useCount</key>
+			<integer>14</integer>
+			<key>uuidString</key>
+			<string>4283CB75-8237-4D0D-8EBB-716B1DF49559</string>
+		</dict>
+		<dict>
+			<key>abbreviation</key>
+			<string>_retina</string>
+			<key>abbreviationMode</key>
+			<integer>0</integer>
+			<key>creationDate</key>
+			<date>2012-04-08T21:41:59Z</date>
+			<key>flags</key>
+			<integer>0</integer>
+			<key>label</key>
+			<string>Retina Media Query</string>
+			<key>lastUsed</key>
+			<date>2012-04-08T23:24:10Z</date>
+			<key>modificationDate</key>
+			<date>2012-04-09T16:12:33Z</date>
+			<key>plainText</key>
+			<string>@media only screen and (-webkit-min-device-pixel-ratio:2){
+     .class{background-image:url('image-2x.png');
+     -webkit-background-size: 0px 0px;}
+}</string>
+			<key>snippetType</key>
+			<integer>0</integer>
+			<key>useCount</key>
+			<integer>1</integer>
+			<key>uuidString</key>
+			<string>F8C0954F-AC6D-4628-88A7-1A55B7999F30</string>
+		</dict>
+	</array>
+</dict>
+</plist>

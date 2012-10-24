@@ -1,0 +1,444 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>groupInfo</key>
+	<dict>
+		<key>expandAfterMode</key>
+		<integer>0</integer>
+		<key>groupName</key>
+		<string>Wordpress</string>
+	</dict>
+	<key>snippetsTE2</key>
+	<array>
+		<dict>
+			<key>abbreviation</key>
+			<string>*postarchivedropdown</string>
+			<key>abbreviationMode</key>
+			<integer>0</integer>
+			<key>creationDate</key>
+			<date>2012-02-08T21:56:18Z</date>
+			<key>flags</key>
+			<integer>0</integer>
+			<key>label</key>
+			<string>Archive Dropdown Menu</string>
+			<key>lastUsed</key>
+			<date>2012-08-14T20:23:30Z</date>
+			<key>modificationDate</key>
+			<date>2012-02-08T21:56:18Z</date>
+			<key>plainText</key>
+			<string>&lt;select name="archive-menu" onChange="document.location.href=this.options[this.selectedIndex].value;"&gt;
+&lt;option value=""&gt;Select month&lt;/option&gt;
+&lt;?php wp_get_archives('type=monthly&amp;format=option'); ?&gt;
+&lt;/select&gt;</string>
+			<key>snippetType</key>
+			<integer>0</integer>
+			<key>useCount</key>
+			<integer>2</integer>
+			<key>uuidString</key>
+			<string>40342854-067E-4731-9AEE-9389D617FE1F</string>
+		</dict>
+		<dict>
+			<key>abbreviation</key>
+			<string>*categorylist</string>
+			<key>abbreviationMode</key>
+			<integer>0</integer>
+			<key>creationDate</key>
+			<date>2012-02-08T21:55:37Z</date>
+			<key>flags</key>
+			<integer>0</integer>
+			<key>label</key>
+			<string>Category List - No Title</string>
+			<key>modificationDate</key>
+			<date>2012-02-08T21:55:37Z</date>
+			<key>plainText</key>
+			<string>&lt;?php wp_list_categories('title_li'); ?&gt;</string>
+			<key>snippetType</key>
+			<integer>0</integer>
+			<key>useCount</key>
+			<integer>0</integer>
+			<key>uuidString</key>
+			<string>F040673C-473E-4DD2-8929-8368E3FB39FC</string>
+		</dict>
+		<dict>
+			<key>abbreviation</key>
+			<string>*fullfuntions</string>
+			<key>abbreviationMode</key>
+			<integer>0</integer>
+			<key>creationDate</key>
+			<date>2012-02-08T21:55:17Z</date>
+			<key>flags</key>
+			<integer>0</integer>
+			<key>label</key>
+			<string>Complete Functions.php Content</string>
+			<key>modificationDate</key>
+			<date>2012-02-08T21:55:17Z</date>
+			<key>plainText</key>
+			<string>&lt;?php
+if ( function_exists('register_sidebar') )
+register_sidebar(array(
+'before_widget' =&gt; '',
+'after_widget' =&gt; '',
+'before_title' =&gt; '&lt;h4&gt;',
+'after_title' =&gt; '&lt;/h4&gt;',
+));
+?&gt;
+
+&lt;?php // for sidebar.php if needed (remove the // below the if() statement) ?&gt;
+&lt;?php // if ( !function_exists('dynamic_sidebar') || !dynamic_sidebar() ) : endif; ?&gt;
+
+&lt;?php
+add_theme_support( 'post-thumbnails' );
+set_post_thumbnail_size( 100, 100, true );
+?&gt;</string>
+			<key>snippetType</key>
+			<integer>0</integer>
+			<key>useCount</key>
+			<integer>0</integer>
+			<key>uuidString</key>
+			<string>AA48B14A-00F8-4CC6-972F-06038127524F</string>
+		</dict>
+		<dict>
+			<key>abbreviation</key>
+			<string>*displaypagecontent</string>
+			<key>abbreviationMode</key>
+			<integer>0</integer>
+			<key>creationDate</key>
+			<date>2012-02-08T21:58:53Z</date>
+			<key>flags</key>
+			<integer>0</integer>
+			<key>label</key>
+			<string>Display "Page" content in PHP File</string>
+			<key>modificationDate</key>
+			<date>2012-02-08T21:58:53Z</date>
+			<key>plainText</key>
+			<string>&lt;?php /* Template Name: Promo */ ?&gt;
+&lt;?php
+$about_id = 18; // substitute page_id of about for "2"
+$about_page = get_post($about_id);
+echo "$about_page-&gt;post_content";
+?&gt;</string>
+			<key>snippetType</key>
+			<integer>0</integer>
+			<key>useCount</key>
+			<integer>0</integer>
+			<key>uuidString</key>
+			<string>0F3DF147-C44A-483A-8F4E-01DFAFE1B0E5</string>
+		</dict>
+		<dict>
+			<key>abbreviation</key>
+			<string>*displaycategory</string>
+			<key>abbreviationMode</key>
+			<integer>0</integer>
+			<key>creationDate</key>
+			<date>2012-04-15T17:44:38Z</date>
+			<key>flags</key>
+			<integer>0</integer>
+			<key>label</key>
+			<string>Display based on post category</string>
+			<key>modificationDate</key>
+			<date>2012-04-15T17:45:11Z</date>
+			<key>plainText</key>
+			<string>&lt;?php $category_name = 'Store Posts'; if(in_category($category_name)) { ?&gt;This shows for that cateogry&lt;?php } else { ?&gt;This shows for any other category&lt;?php } ?&gt;</string>
+			<key>snippetType</key>
+			<integer>0</integer>
+			<key>useCount</key>
+			<integer>0</integer>
+			<key>uuidString</key>
+			<string>50A156A1-8D7E-4DC2-B057-3A0F3AC7C72A</string>
+		</dict>
+		<dict>
+			<key>abbreviation</key>
+			<string>*dropdownnavcustom</string>
+			<key>abbreviationMode</key>
+			<integer>0</integer>
+			<key>creationDate</key>
+			<date>2012-03-26T02:34:56Z</date>
+			<key>flags</key>
+			<integer>0</integer>
+			<key>label</key>
+			<string>Dropdown Nav with custom class</string>
+			<key>modificationDate</key>
+			<date>2012-04-09T16:19:40Z</date>
+			<key>plainText</key>
+			<string>&lt;?php wp_dropdown_pages( $args ); ?&gt;
+
+Add this to functions:
+&lt;?php
+	function add_nav_class($output) {
+	    $output= preg_replace('/&lt;select/', '&lt;select class="mobile-only menu-dropdown"', $output, 1);
+	    return $output;
+	}
+	add_filter('wp_dropdown_pages', 'add_nav_class');
+?&gt;</string>
+			<key>snippetType</key>
+			<integer>0</integer>
+			<key>useCount</key>
+			<integer>0</integer>
+			<key>uuidString</key>
+			<string>FAA70176-C978-406D-9002-72C1B77410B9</string>
+		</dict>
+		<dict>
+			<key>abbreviation</key>
+			<string>*featuredimage</string>
+			<key>abbreviationMode</key>
+			<integer>0</integer>
+			<key>creationDate</key>
+			<date>2012-02-08T21:54:05Z</date>
+			<key>flags</key>
+			<integer>0</integer>
+			<key>label</key>
+			<string>Featured Image Thumb</string>
+			<key>modificationDate</key>
+			<date>2012-02-08T21:54:05Z</date>
+			<key>plainText</key>
+			<string>Add To Functions.php
+&lt;?php
+add_theme_support( 'post-thumbnails' );
+set_post_thumbnail_size( 100, 100, true );
+?&gt;
+
+
+
+Add to place thumb
+
+&lt;?php
+	if ( has_post_thumbnail() ) {
+													// the current post has a thumbnail
+												 	the_post_thumbnail();
+	} else {
+													// the current post lacks a thumbnail
+													echo ('');
+}
+?&gt;</string>
+			<key>snippetType</key>
+			<integer>0</integer>
+			<key>useCount</key>
+			<integer>0</integer>
+			<key>uuidString</key>
+			<string>5799815C-9EA5-4798-A5B2-F4EF3DD70920</string>
+		</dict>
+		<dict>
+			<key>abbreviation</key>
+			<string>*looppost</string>
+			<key>abbreviationMode</key>
+			<integer>0</integer>
+			<key>creationDate</key>
+			<date>2012-02-08T21:57:49Z</date>
+			<key>flags</key>
+			<integer>0</integer>
+			<key>label</key>
+			<string>Loop - Post</string>
+			<key>lastUsed</key>
+			<date>2012-04-26T03:59:41Z</date>
+			<key>modificationDate</key>
+			<date>2012-02-08T21:57:49Z</date>
+			<key>plainText</key>
+			<string>&lt;?php if(have_posts()) : while(have_posts()) : the_post(); ?&gt;
+	&lt;div class="post" id="&lt;?php the_ID(); ?&gt;"&gt;
+		&lt;div class="post_header"&gt;
+			&lt;a class="title" href="&lt;?php the_permalink(); ?&gt;"&gt;&lt;?php the_title(); ?&gt;&lt;/a&gt;&lt;/p&gt;
+			&lt;p class="date"&gt;&lt;?php unset($previousday); printf( __( '%1$s &amp;#8211; %2$s', 'sandbox' ), the_date( '', '', '', false ), get_the_time() ) ?&gt;&lt;/p&gt;
+		&lt;/div&gt;
+		&lt;div class="post_body"&gt;
+			&lt;div class="single_post"&gt;
+				&lt;?php the_content(); ?&gt;
+			&lt;/div&gt;
+		&lt;/div&gt;
+&lt;?php endwhile; else : ?&gt;
+&lt;?php endif; ?&gt;</string>
+			<key>snippetType</key>
+			<integer>0</integer>
+			<key>useCount</key>
+			<integer>1</integer>
+			<key>uuidString</key>
+			<string>B725975A-764A-40D6-8106-5FCD8AD11145</string>
+		</dict>
+		<dict>
+			<key>abbreviation</key>
+			<string>*wppagelist</string>
+			<key>abbreviationMode</key>
+			<integer>0</integer>
+			<key>creationDate</key>
+			<date>2012-02-08T21:56:57Z</date>
+			<key>flags</key>
+			<integer>0</integer>
+			<key>label</key>
+			<string>Page Listing</string>
+			<key>lastUsed</key>
+			<date>2012-03-28T04:26:04Z</date>
+			<key>modificationDate</key>
+			<date>2012-02-08T21:56:57Z</date>
+			<key>plainText</key>
+			<string>Regular
+&lt;?php wp_list_pages(' '); ?&gt;
+
+No Title
+&lt;?php wp_list_pages(' '); ?&gt;
+
+No Title and Exclude Page by ID
+&lt;?php wp_list_pages('title_li&amp;exclude=18'); ?&gt;</string>
+			<key>snippetType</key>
+			<integer>0</integer>
+			<key>useCount</key>
+			<integer>2</integer>
+			<key>uuidString</key>
+			<string>776B4ABC-279E-41AB-8A6C-C50D43CE2A06</string>
+		</dict>
+		<dict>
+			<key>abbreviation</key>
+			<string>*phpinclude</string>
+			<key>abbreviationMode</key>
+			<integer>0</integer>
+			<key>creationDate</key>
+			<date>2012-02-08T21:55:59Z</date>
+			<key>flags</key>
+			<integer>0</integer>
+			<key>label</key>
+			<string>PHP Include</string>
+			<key>modificationDate</key>
+			<date>2012-02-08T21:55:59Z</date>
+			<key>plainText</key>
+			<string>&lt;?php include("file.php"); ?&gt;</string>
+			<key>snippetType</key>
+			<integer>0</integer>
+			<key>useCount</key>
+			<integer>0</integer>
+			<key>uuidString</key>
+			<string>CB1224A5-DB7A-4983-9EFF-812D977450D4</string>
+		</dict>
+		<dict>
+			<key>abbreviation</key>
+			<string>*postexcerpt</string>
+			<key>abbreviationMode</key>
+			<integer>0</integer>
+			<key>creationDate</key>
+			<date>2012-02-08T21:53:44Z</date>
+			<key>flags</key>
+			<integer>0</integer>
+			<key>label</key>
+			<string>Post Excerpt</string>
+			<key>modificationDate</key>
+			<date>2012-02-08T21:53:44Z</date>
+			<key>plainText</key>
+			<string>&lt;?php the_excerpt(); ?&gt;
+
+&lt;a href="&lt;?php the_permalink(); ?&gt;" title="Read the rest of &lt;?php the_title(); ?&gt;" class="more-link"&gt;Read the rest of this entry »&lt;/a&gt;</string>
+			<key>snippetType</key>
+			<integer>0</integer>
+			<key>useCount</key>
+			<integer>0</integer>
+			<key>uuidString</key>
+			<string>9DF54D34-9AF4-47B4-B7E1-756E052B4B74</string>
+		</dict>
+		<dict>
+			<key>abbreviation</key>
+			<string>*themestylescss</string>
+			<key>abbreviationMode</key>
+			<integer>0</integer>
+			<key>creationDate</key>
+			<date>2012-02-08T22:03:32Z</date>
+			<key>flags</key>
+			<integer>0</integer>
+			<key>label</key>
+			<string>Root styles.css</string>
+			<key>modificationDate</key>
+			<date>2012-02-08T22:04:16Z</date>
+			<key>plainText</key>
+			<string>/*
+Theme Name:
+Theme URI: http://www.client.com
+Author: Manik Rathee, RevSystems, Inc
+Author URI: http://www.manikrathee.com/
+*/
+
+</string>
+			<key>snippetType</key>
+			<integer>0</integer>
+			<key>useCount</key>
+			<integer>0</integer>
+			<key>uuidString</key>
+			<string>A097914A-9757-4980-849F-32125FFA8EAE</string>
+		</dict>
+		<dict>
+			<key>abbreviation</key>
+			<string>*templatedirectory</string>
+			<key>abbreviationMode</key>
+			<integer>0</integer>
+			<key>creationDate</key>
+			<date>2012-02-08T21:52:46Z</date>
+			<key>flags</key>
+			<integer>0</integer>
+			<key>label</key>
+			<string>Template Directory</string>
+			<key>modificationDate</key>
+			<date>2012-02-08T21:52:57Z</date>
+			<key>plainText</key>
+			<string>&lt;?php bloginfo('template_directory'); ?&gt;</string>
+			<key>snippetType</key>
+			<integer>0</integer>
+			<key>useCount</key>
+			<integer>0</integer>
+			<key>uuidString</key>
+			<string>3A473007-05E6-4DBD-86BF-36393A785777</string>
+		</dict>
+		<dict>
+			<key>abbreviation</key>
+			<string>*templatepagetree</string>
+			<key>abbreviationMode</key>
+			<integer>0</integer>
+			<key>creationDate</key>
+			<date>2012-02-08T22:02:07Z</date>
+			<key>flags</key>
+			<integer>0</integer>
+			<key>label</key>
+			<string>Template Requirements</string>
+			<key>modificationDate</key>
+			<date>2012-02-08T22:03:27Z</date>
+			<key>plainText</key>
+			<string>Pages:
+
+functions.php (expander for content)
+index - main page, use excerpt
+page - regular pages
+post - full post display
+sidebar.php - sidebar (functions.php must support it)
+single.php - same as page?
+style.css - in root. (expander)</string>
+			<key>snippetType</key>
+			<integer>0</integer>
+			<key>useCount</key>
+			<integer>0</integer>
+			<key>uuidString</key>
+			<string>9D124AF4-A440-43FB-8620-208EC50C9D54</string>
+		</dict>
+		<dict>
+			<key>abbreviation</key>
+			<string>*themeincludes</string>
+			<key>abbreviationMode</key>
+			<integer>0</integer>
+			<key>creationDate</key>
+			<date>2012-02-08T21:53:18Z</date>
+			<key>flags</key>
+			<integer>0</integer>
+			<key>label</key>
+			<string>Theme Includes</string>
+			<key>lastUsed</key>
+			<date>2012-03-28T04:49:35Z</date>
+			<key>modificationDate</key>
+			<date>2012-02-08T21:53:18Z</date>
+			<key>plainText</key>
+			<string>&lt;?php /* Template Name: Index */ ?&gt;
+&lt;?php get_header(); ?&gt;
+&lt;?php get_sidebar(); ?&gt;
+&lt;?php get_footer(); ?&gt;</string>
+			<key>snippetType</key>
+			<integer>0</integer>
+			<key>useCount</key>
+			<integer>1</integer>
+			<key>uuidString</key>
+			<string>C8AC94C3-BF0B-4FA7-8C29-76C16E586455</string>
+		</dict>
+	</array>
+</dict>
+</plist>

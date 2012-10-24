@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>groupInfo</key>
+	<dict>
+		<key>expandAfterMode</key>
+		<integer>0</integer>
+		<key>groupName</key>
+		<string>System &amp; Apps</string>
+	</dict>
+	<key>snippetsTE2</key>
+	<array>
+		<dict>
+			<key>abbreviation</key>
+			<string>_fw</string>
+			<key>abbreviationMode</key>
+			<integer>0</integer>
+			<key>creationDate</key>
+			<date>2011-05-19T17:18:45Z</date>
+			<key>flags</key>
+			<integer>0</integer>
+			<key>label</key>
+			<string>App - Fireworks</string>
+			<key>lastUsed</key>
+			<date>2011-11-02T15:59:03Z</date>
+			<key>modificationDate</key>
+			<date>2011-05-19T17:19:12Z</date>
+			<key>plainText</key>
+			<string>fireworks</string>
+			<key>snippetType</key>
+			<integer>0</integer>
+			<key>useCount</key>
+			<integer>1</integer>
+			<key>uuidString</key>
+			<string>BC158EAC-9736-4DD8-A532-1DA82CBF7D98</string>
+		</dict>
+		<dict>
+			<key>abbreviation</key>
+			<string>_ps</string>
+			<key>abbreviationMode</key>
+			<integer>0</integer>
+			<key>creationDate</key>
+			<date>2011-05-19T19:23:44Z</date>
+			<key>flags</key>
+			<integer>0</integer>
+			<key>label</key>
+			<string>App -Photoshop</string>
+			<key>modificationDate</key>
+			<date>2011-05-19T19:23:51Z</date>
+			<key>plainText</key>
+			<string>photoshop</string>
+			<key>snippetType</key>
+			<integer>0</integer>
+			<key>useCount</key>
+			<integer>0</integer>
+			<key>uuidString</key>
+			<string>34251BE2-1417-456F-A6C7-DE5CF7148D53</string>
+		</dict>
+		<dict>
+			<key>abbreviation</key>
+			<string>*hidefiles</string>
+			<key>abbreviationMode</key>
+			<integer>0</integer>
+			<key>creationDate</key>
+			<date>2012-01-18T18:21:49Z</date>
+			<key>flags</key>
+			<integer>0</integer>
+			<key>label</key>
+			<string>Hide Hidden Files</string>
+			<key>lastUsed</key>
+			<date>2012-01-28T04:44:44Z</date>
+			<key>modificationDate</key>
+			<date>2012-01-18T18:22:08Z</date>
+			<key>plainText</key>
+			<string>defaults write com.apple.finder AppleShowAllFiles OFF
+
+killall Finder</string>
+			<key>snippetType</key>
+			<integer>0</integer>
+			<key>useCount</key>
+			<integer>3</integer>
+			<key>uuidString</key>
+			<string>6E7952E8-D69E-4BE8-BA2C-D32EB6C64B8F</string>
+		</dict>
+		<dict>
+			<key>abbreviation</key>
+			<string>*showfiles</string>
+			<key>abbreviationMode</key>
+			<integer>0</integer>
+			<key>creationDate</key>
+			<date>2012-01-18T18:22:12Z</date>
+			<key>flags</key>
+			<integer>0</integer>
+			<key>label</key>
+			<string>Show Hidden Files</string>
+			<key>lastUsed</key>
+			<date>2012-01-28T03:40:52Z</date>
+			<key>modificationDate</key>
+			<date>2012-01-18T18:22:12Z</date>
+			<key>plainText</key>
+			<string>defaults write com.apple.finder AppleShowAllFiles ON
+
+killall Finder</string>
+			<key>snippetType</key>
+			<integer>0</integer>
+			<key>useCount</key>
+			<integer>2</integer>
+			<key>uuidString</key>
+			<string>F99589B2-2ED4-4F2D-BA55-897B465B533F</string>
+		</dict>
+	</array>
+</dict>
+</plist>

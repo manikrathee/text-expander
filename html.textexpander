@@ -1,0 +1,315 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>groupInfo</key>
+	<dict>
+		<key>expandAfterMode</key>
+		<integer>0</integer>
+		<key>groupName</key>
+		<string>html</string>
+	</dict>
+	<key>snippetsTE2</key>
+	<array>
+		<dict>
+			<key>abbreviation</key>
+			<string>&lt;a href</string>
+			<key>abbreviationMode</key>
+			<integer>0</integer>
+			<key>creationDate</key>
+			<date>2012-03-10T23:21:55Z</date>
+			<key>flags</key>
+			<integer>0</integer>
+			<key>label</key>
+			<string>A href</string>
+			<key>lastUsed</key>
+			<date>2012-10-14T03:52:26Z</date>
+			<key>modificationDate</key>
+			<date>2012-03-10T23:21:55Z</date>
+			<key>plainText</key>
+			<string>&lt;a href="%|" title=""&gt;&lt;/a&gt;</string>
+			<key>snippetType</key>
+			<integer>0</integer>
+			<key>useCount</key>
+			<integer>94</integer>
+			<key>uuidString</key>
+			<string>A351F2F8-F9F4-4A8C-A946-E84121BB9CF8</string>
+		</dict>
+		<dict>
+			<key>abbreviation</key>
+			<string>/dropdown</string>
+			<key>abbreviationMode</key>
+			<integer>0</integer>
+			<key>creationDate</key>
+			<date>2012-03-08T05:14:33Z</date>
+			<key>flags</key>
+			<integer>0</integer>
+			<key>label</key>
+			<string>Dropdown Select</string>
+			<key>modificationDate</key>
+			<date>2012-04-09T16:17:01Z</date>
+			<key>plainText</key>
+			<string>&lt;select&gt;
+&lt;option value="item"&gt;Item&lt;/option&gt;
+&lt;option value="item"&gt;Item&lt;/option&gt;
+&lt;option value="item"&gt;Item&lt;/option&gt;
+&lt;option value="item"&gt;Item&lt;/option&gt;
+&lt;option value="item"&gt;Item&lt;/option&gt;
+&lt;/select&gt;</string>
+			<key>snippetType</key>
+			<integer>0</integer>
+			<key>useCount</key>
+			<integer>0</integer>
+			<key>uuidString</key>
+			<string>814C8430-9180-47AE-8103-D66AF17EA012</string>
+		</dict>
+		<dict>
+			<key>abbreviation</key>
+			<string>&lt;!-- </string>
+			<key>abbreviationMode</key>
+			<integer>0</integer>
+			<key>creationDate</key>
+			<date>2011-12-23T05:07:37Z</date>
+			<key>flags</key>
+			<integer>0</integer>
+			<key>label</key>
+			<string>HTML - Comment</string>
+			<key>lastUsed</key>
+			<date>2012-10-24T01:41:21Z</date>
+			<key>modificationDate</key>
+			<date>2011-12-23T05:07:48Z</date>
+			<key>plainText</key>
+			<string>&lt;!-- %| --&gt;</string>
+			<key>snippetType</key>
+			<integer>0</integer>
+			<key>useCount</key>
+			<integer>126</integer>
+			<key>uuidString</key>
+			<string>974F3726-D90C-41AF-A675-10E2BE49639D</string>
+		</dict>
+		<dict>
+			<key>abbreviation</key>
+			<string>h5doc</string>
+			<key>abbreviationMode</key>
+			<integer>0</integer>
+			<key>creationDate</key>
+			<date>2011-06-09T15:56:37Z</date>
+			<key>flags</key>
+			<integer>0</integer>
+			<key>label</key>
+			<string>HTML5 Doc</string>
+			<key>lastUsed</key>
+			<date>2012-07-23T22:46:12Z</date>
+			<key>modificationDate</key>
+			<date>2011-10-27T18:34:31Z</date>
+			<key>plainText</key>
+			<string>&lt;!DOCTYPE html&gt;
+&lt;!--[if lt IE 7 ]&gt; &lt;html lang="en" class="no-js ie6"&gt; &lt;![endif]--&gt;
+&lt;!--[if IE 7 ]&gt;    &lt;html lang="en" class="no-js ie7"&gt; &lt;![endif]--&gt;
+&lt;!--[if IE 8 ]&gt;    &lt;html lang="en" class="no-js ie8"&gt; &lt;![endif]--&gt;
+&lt;!--[if IE 9 ]&gt;    &lt;html lang="en" class="no-js ie9"&gt; &lt;![endif]--&gt;
+&lt;!--[if (gt IE 9)|!(IE)]&gt;&lt;!--&gt; &lt;html lang="en" class="no-js"&gt; &lt;!--&lt;![endif]--&gt;
+&lt;head&gt;
+  &lt;meta charset="utf-8" /&gt;
+  &lt;meta name="description" content="" /&gt;
+  &lt;meta name="author" content="" /&gt;
+  &lt;title&gt;&lt;/title&gt;
+  &lt;link href="css/style.css?v=1" rel="stylesheet" type="text/css" media="screen" /&gt;
+  &lt;link href="css/style_print.css?v=1" rel="stylesheet" type="text/css" media="print" /&gt;
+  &lt;script type="text/javascript" src="scripts/swfobject.js"&gt;&lt;/script&gt;
+  &lt;script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.5.2/jquery.min.js"&gt;&lt;/script&gt;
+  &lt;script type="text/javascript" src="scripts/funcionalidades.js"&gt;&lt;/script&gt;
+  &lt;!--[if lt IE 9]&gt;
+    &lt;script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"&gt;&lt;/script&gt;
+    &lt;script src="scripts/innershiv.min.js"&gt;&lt;/script&gt;
+  &lt;![endif]--&gt;
+  &lt;!--[if IE 6]&gt;&lt;script type="text/javascript" src="scripts/DD_belatedPNG_0.0.8a-min.js"&gt;&lt;/script&gt;&lt;![endif]--&gt;
+  &lt;!--[if lt IE 8]&gt;&lt;script src="scripts/font.js"&gt;&lt;/script&gt;&lt;![endif]--&gt;
+&lt;/head&gt;
+&lt;body&gt;
+&lt;!-- open limits --&gt;
+&lt;div id="limits"&gt;
+ 
+&lt;!-- open top --&gt;
+  &lt;header id="top"&gt;
+     
+  &lt;/header&gt;
+&lt;!-- close top --&gt;
+ 
+&lt;!-- open content --&gt;
+  &lt;div id="content"&gt;
+     
+  &lt;/div&gt;
+&lt;!-- close content --&gt;
+ 
+&lt;!-- open footer --&gt;
+  &lt;footer id="footer"&gt;
+     
+  &lt;/footer&gt;
+&lt;!-- close footer --&gt;
+   
+&lt;/div&gt;
+&lt;!-- close limits --&gt;
+&lt;/body&gt;
+&lt;/html&gt;</string>
+			<key>snippetType</key>
+			<integer>0</integer>
+			<key>useCount</key>
+			<integer>3</integer>
+			<key>uuidString</key>
+			<string>5BCE1F18-1B2F-4E14-8868-3329D21729CF</string>
+		</dict>
+		<dict>
+			<key>abbreviation</key>
+			<string>&lt;img</string>
+			<key>abbreviationMode</key>
+			<integer>0</integer>
+			<key>creationDate</key>
+			<date>2012-03-10T23:21:20Z</date>
+			<key>flags</key>
+			<integer>0</integer>
+			<key>label</key>
+			<string>IMG</string>
+			<key>lastUsed</key>
+			<date>2012-10-14T01:46:25Z</date>
+			<key>modificationDate</key>
+			<date>2012-03-10T23:21:52Z</date>
+			<key>plainText</key>
+			<string>&lt;img src="%|" alt=""&gt;</string>
+			<key>snippetType</key>
+			<integer>0</integer>
+			<key>useCount</key>
+			<integer>51</integer>
+			<key>uuidString</key>
+			<string>B48EA5B1-781C-4929-BC1D-68940A5286A4</string>
+		</dict>
+		<dict>
+			<key>abbreviation</key>
+			<string>/li</string>
+			<key>abbreviationMode</key>
+			<integer>0</integer>
+			<key>creationDate</key>
+			<date>2011-05-20T16:02:00Z</date>
+			<key>flags</key>
+			<integer>0</integer>
+			<key>label</key>
+			<string>li</string>
+			<key>lastUsed</key>
+			<date>2012-10-14T03:33:48Z</date>
+			<key>modificationDate</key>
+			<date>2012-04-09T16:16:48Z</date>
+			<key>plainText</key>
+			<string>&lt;li&gt;%|&lt;/li&gt;</string>
+			<key>snippetType</key>
+			<integer>0</integer>
+			<key>useCount</key>
+			<integer>266</integer>
+			<key>uuidString</key>
+			<string>8B85B8CF-B14D-4221-BF29-5697FCE5C5FD</string>
+		</dict>
+		<dict>
+			<key>abbreviation</key>
+			<string>/ali</string>
+			<key>abbreviationMode</key>
+			<integer>0</integer>
+			<key>creationDate</key>
+			<date>2011-05-20T14:06:41Z</date>
+			<key>flags</key>
+			<integer>0</integer>
+			<key>label</key>
+			<string>List + Link</string>
+			<key>lastUsed</key>
+			<date>2012-03-12T17:53:12Z</date>
+			<key>modificationDate</key>
+			<date>2012-04-09T16:16:54Z</date>
+			<key>plainText</key>
+			<string>&lt;li&gt;&lt;a href="%|"&gt; &lt;/a&gt;&lt;/li&gt;</string>
+			<key>snippetType</key>
+			<integer>0</integer>
+			<key>useCount</key>
+			<integer>8</integer>
+			<key>uuidString</key>
+			<string>4F4FB9EB-39DA-42AB-9809-30F53CA71683</string>
+		</dict>
+		<dict>
+			<key>abbreviation</key>
+			<string>&lt;p&gt;</string>
+			<key>abbreviationMode</key>
+			<integer>0</integer>
+			<key>creationDate</key>
+			<date>2012-08-13T03:19:56Z</date>
+			<key>flags</key>
+			<integer>0</integer>
+			<key>label</key>
+			<string>P tag</string>
+			<key>lastUsed</key>
+			<date>2012-10-14T03:07:56Z</date>
+			<key>modificationDate</key>
+			<date>2012-08-13T03:20:06Z</date>
+			<key>plainText</key>
+			<string>&lt;p&gt;%|&lt;/p&gt;</string>
+			<key>snippetType</key>
+			<integer>0</integer>
+			<key>useCount</key>
+			<integer>5</integer>
+			<key>uuidString</key>
+			<string>AC77DD73-F9C4-401F-A3DE-FE846F3E1EE0</string>
+		</dict>
+		<dict>
+			<key>abbreviation</key>
+			<string>/menu</string>
+			<key>abbreviationMode</key>
+			<integer>0</integer>
+			<key>creationDate</key>
+			<date>2012-04-09T16:17:12Z</date>
+			<key>flags</key>
+			<integer>0</integer>
+			<key>label</key>
+			<string>UL Menu</string>
+			<key>modificationDate</key>
+			<date>2012-04-09T16:17:44Z</date>
+			<key>plainText</key>
+			<string>&lt;ul&gt;
+   &lt;li&gt;&lt;a href="#" title=""&gt;Home&lt;/a&gt;&lt;/li&gt;
+   &lt;li&gt;&lt;a href="#" title=""&gt;About&lt;/a&gt;&lt;/li&gt;
+   &lt;li&gt;&lt;a href="#" title=""&gt;Work&lt;/a&gt;&lt;/li&gt;
+   &lt;li&gt;&lt;a href="#" title=""&gt;Blog&lt;/a&gt;&lt;/li&gt;
+   &lt;li&gt;&lt;a href="#" title=""&gt;Support&lt;/a&gt;&lt;/li&gt;
+   &lt;li&gt;&lt;a href="#" title=""&gt;Contat&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;</string>
+			<key>snippetType</key>
+			<integer>0</integer>
+			<key>useCount</key>
+			<integer>0</integer>
+			<key>uuidString</key>
+			<string>34BE8C7B-0F34-45D0-8D14-C85E8B5CFC32</string>
+		</dict>
+		<dict>
+			<key>abbreviation</key>
+			<string>,ul</string>
+			<key>abbreviationMode</key>
+			<integer>0</integer>
+			<key>creationDate</key>
+			<date>2011-05-20T16:01:23Z</date>
+			<key>flags</key>
+			<integer>0</integer>
+			<key>label</key>
+			<string>UL+LI</string>
+			<key>lastUsed</key>
+			<date>2012-08-07T23:15:36Z</date>
+			<key>modificationDate</key>
+			<date>2011-05-20T16:01:23Z</date>
+			<key>plainText</key>
+			<string>&lt;ul&gt;
+   &lt;li&gt;%|&lt;/li&gt;
+&lt;/ul&gt;</string>
+			<key>snippetType</key>
+			<integer>0</integer>
+			<key>useCount</key>
+			<integer>47</integer>
+			<key>uuidString</key>
+			<string>6093EFFF-5AE3-4918-A457-316DF85B6AB7</string>
+		</dict>
+	</array>
+</dict>
+</plist>
